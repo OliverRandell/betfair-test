@@ -1,0 +1,13 @@
+.btn {
+    border: 1px solid $primary;
+    color: $primary;
+    transition: color $transition-timing ease-out, border $transition-timing ease-out;
+    background-color: $secondary;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    line-height: 1;
+    &:hover {
+        color: darken($primary, 25%);
+        border: darken($primary, 25%);
+    }
+}

@@ -4,12 +4,17 @@
     transition: color $transition-timing ease-out, border $transition-timing ease-out;
     background-color: $secondary;
     text-transform: uppercase;
-    padding: 0.5rem 2rem;
     line-height: 1;
     cursor: pointer;
 
     &:hover {
         color: darken($primary, 25%);
         border: darken($primary, 25%);
+    }
+    &-primary {
+        padding: 0.5rem 2rem;
+    }
+    &-open-modal {
+        padding: .5rem;
     }
 }

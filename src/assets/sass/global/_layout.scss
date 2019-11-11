@@ -3,6 +3,7 @@ body {
     color: $white;
     margin: 0;
     width: 100%;
+    @include baseFont();
 }
 
 .section-blurb {

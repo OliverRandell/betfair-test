@@ -1,0 +1,11 @@
+.feature-img {
+    position: relative;
+    @include responsiveImg(30rem);
+    > button {
+        position:absolute;
+        top: 0.5rem;
+        right: .5rem;
+        z-index: 2;
+    }
+}
+

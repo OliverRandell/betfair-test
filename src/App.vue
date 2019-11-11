@@ -4,27 +4,28 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <header class="site-header">
-              <i>d</i>
-              <h1 class="site-branding">Project name</h1>
-            </header>
+            <SiteHeader />
             <!-- <Carousel
               :starting-image="2"
               :images="images"
               :auto-slide-interval="1500"
               :show-progress-bar="true"
-            ></Carousel>-->
-            <section>
-              <h2>Project name</h2>
-              <h4>
+            ></Carousel>--> 
+            <section class="text-center">
+              <h2 class="section-header">Project name</h2>
+              <h4 class="section-sub-heading">
                 service offering
                 <span>for</span> client name
               </h4>
               <p>Para text</p>
-              <button class="btn">Visit site</button>
+              <button class="btn btn-primary">Visit site</button>
             </section>
+
             <section class="feature-img">
-              <img src alt />
+              <button class="btn btn-open-modal" @click="showModal = true">Show Modal</button>
+              <figure>
+                <img :src="imgSrc" :alt="imgAlt" />
+              </figure>
             </section>
             <!-- <SectionBlurb :title="title" :text="text"></SectionBlurb> -->
             <section class="section-blurb">
@@ -52,25 +53,24 @@
           <div class="col">
             <h2 class="section-header">More layouts</h2>
             <section class="img-wrapper">
-              <button @click="toggleModal()">Close</button>
+              <!-- <button @click="toggleModal()">Close</button> -->
             </section>
           </div>
         </div>
       </div>
     </main>
-    <transition name="modal">
-      <Modal v-if="showModal" @toggle="toggleModal()">
-        <header slot="header">Modal header</header>
-        <div slot="body">
-          <p>This is the body</p>
-        </div>
-        <button @click="toggleModal()">Close</button>
-      </Modal>
-    </transition>
+
+    
+    <Modal v-model="showModal"></Modal>
+    
+    
+    
+    
   </div>
 </template>
 
 <script>
+import SiteHeader from "./components/SiteHeader";
 import BreakoutArea from "./components/BreakoutArea";
 //import SectionBlurb from "./components/SectionBlurb";
 import Modal from "./components/Modal";
@@ -79,6 +79,7 @@ import Modal from "./components/Modal";
 export default {
   name: "app",
   components: {
+    SiteHeader,
     BreakoutArea,
     //SectionBlurb,
     Modal
@@ -86,11 +87,12 @@ export default {
   },
   data() {
     return {
-      imgSrc: "http://placekitten.com/200/300",
+      imgSrc: "./assets/imgs/img-basketball.jpg",
+      imgAlt: "Basketball photo",
       showModal: false
     };
   },
-  mmethods: {
+  methods: {
     toggleModal: function() {
       this.showModal = !this.showModal;
     }

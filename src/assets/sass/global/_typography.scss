@@ -1,3 +1,23 @@
 .section-header {
     text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-sub-heading {
+    text-transform: uppercase;
+    line-height: 1;
+    > span {
+        font-family: $font-family-serif;
+        
+    }
+}
+
+p {
+    @include baseFont();
 }

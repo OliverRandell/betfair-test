@@ -57,7 +57,12 @@
             </section>
           </div>
         </div>
+
       </div>
+      <hr>
+
+      <MoreProjects />
+      <footer class="site-footer">&copy; Deloitte Digital 2013</footer>
     </main>
 
     
@@ -74,6 +79,7 @@ import SiteHeader from "./components/SiteHeader";
 import BreakoutArea from "./components/BreakoutArea";
 //import SectionBlurb from "./components/SectionBlurb";
 import Modal from "./components/Modal";
+import MoreProjects from "./components/MoreProjects";
 //import Carousel from "./components/Carousel"
 
 export default {
@@ -81,6 +87,7 @@ export default {
   components: {
     SiteHeader,
     BreakoutArea,
+    MoreProjects,
     //SectionBlurb,
     Modal
     //Carousel

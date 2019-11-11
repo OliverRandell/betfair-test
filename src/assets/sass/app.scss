@@ -9,7 +9,7 @@
 @import "vendors/bootstrap";
 
 // GLOBAL STYLES THROUGHOUT THE SITE
-// @import 'global/layout';
+@import 'global/layout';
 @import 'global/typography';
 @import 'global/buttons';
 @import 'global/images';
@@ -19,6 +19,7 @@
 // COMPONENTS
 @import 'components/header';
 @import 'components/modal';
+@import './components/footer';
 // @import 'components/hero';
 // @import 'components/articles';
 // @import 'components/alerts';

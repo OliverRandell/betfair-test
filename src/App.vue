@@ -10,7 +10,7 @@
               :images="images"
               :auto-slide-interval="1500"
               :show-progress-bar="true"
-            ></Carousel>--> 
+            ></Carousel>-->
             <section class="text-center">
               <h2 class="section-header">Project name</h2>
               <h4 class="section-sub-heading">
@@ -20,7 +20,7 @@
               <p>Para text</p>
               <button class="btn btn-primary">Visit site</button>
             </section>
-
+            <FeatureImg :imgSrc="@/assets/imgs/img-basketball.jpg"></FeatureImg>
             <section class="feature-img">
               <button class="btn btn-open-modal" @click="showModal = true">Show Modal</button>
               <figure>
@@ -57,26 +57,21 @@
             </section>
           </div>
         </div>
-
       </div>
-      <hr>
+      <hr />
 
       <MoreProjects />
       <footer class="site-footer">&copy; Deloitte Digital 2013</footer>
     </main>
 
-    
     <Modal v-model="showModal"></Modal>
-    
-    
-    
-    
   </div>
 </template>
 
 <script>
 import SiteHeader from "./components/SiteHeader";
 import BreakoutArea from "./components/BreakoutArea";
+import FeatureImg from "./components/FeatureImg";
 //import SectionBlurb from "./components/SectionBlurb";
 import Modal from "./components/Modal";
 import MoreProjects from "./components/MoreProjects";
@@ -88,13 +83,14 @@ export default {
     SiteHeader,
     BreakoutArea,
     MoreProjects,
+    FeatureImg,
     //SectionBlurb,
     Modal
     //Carousel
   },
   data() {
     return {
-      imgSrc: "./assets/imgs/img-basketball.jpg",
+      imgSrc: "@/assets/imgs/img-basketball.jpg",
       imgAlt: "Basketball photo",
       showModal: false
     };

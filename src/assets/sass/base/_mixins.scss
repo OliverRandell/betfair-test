@@ -1,44 +1,48 @@
 @mixin spacer($size) {
-    margin-bottom: $size;
-    @include media-breakpoint-up(md) {
-        margin-bottom: $size*1.5;
-    }
-    @include media-breakpoint-up(lg) {
-        margin-bottom: $size*2;
-    }
+	margin-bottom: $size;
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: $size*1.5;
+	}
+
+	@include media-breakpoint-up(lg) {
+		margin-bottom: $size*2;
+	}
 }
 
 @mixin responsiveImg($height) {
-    position: relative;
-    overflow: hidden;
-    height: $height;
-    display: block;
-    @include spacer(1rem);
-    figure {
-        margin: 0;
-        width: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    img {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+	position: relative;
+	overflow: hidden;
+	height: $height;
+	display: block;
+	@include spacer(1rem);
+
+	figure {
+		margin: 0;
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
 }
 
 @mixin baseFont() {
-    font-family: $font-family-base;
-    font-weight: $font-family-weight;
+	font-family: $font-family-base;
+	font-weight: $font-family-weight;
 }

@@ -1,25 +1,27 @@
 .btn {
-    border: 1px solid $primary;
-    color: $primary;
+	border: 1px solid $primary;
+	color: $primary;
 
-    transition: all $transition-timing ease-out;
-    background-color: $secondary;
-    text-transform: uppercase;
-    line-height: 1;
-    font-weight: $font-weight-bold;
-    font-size: $font-size-base*.75;
-    letter-spacing: 1px;
-    cursor: pointer;
+	transition: all $transition-timing ease-out;
+	background-color: $secondary;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: $font-weight-bold;
+	font-size: $font-size-base*.75;
+	letter-spacing: 1px;
+	cursor: pointer;
 
-    &:hover {
-        color: darken($primary, 25%);
-        border-radius: 0.5rem;
-        border-color: darken($primary, 25%);
-    }
-    &-primary {
-        padding: .8rem 3rem;
-    }
-    &-open-modal {
-        padding: .5rem;
-    }
+	&:hover {
+		color: darken($primary, 25%);
+		border-radius: 0.5rem;
+		border-color: darken($primary, 25%);
+	}
+
+	&-primary {
+		padding: .8rem 3rem;
+	}
+
+	&-open-modal {
+		padding: .5rem;
+	}
 }

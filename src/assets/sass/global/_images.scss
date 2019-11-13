@@ -1,20 +1,22 @@
 .feature-img {
-    position: relative;
-    @include responsiveImg(20rem);
-    @include media-breakpoint-up(lg) {
-        height: 30rem;
-    }
-    > button {
-        position:absolute;
-        top: 0.5rem;
-        right: .5rem;
-        z-index: 2;
-    }
+	position: relative;
+	@include responsiveImg(20rem);
+
+	@include media-breakpoint-up(lg) {
+		height: 30rem;
+	}
+
+	>button {
+		position: absolute;
+		top: 0.5rem;
+		right: .5rem;
+		z-index: 2;
+	}
 }
 
 
 .img-caption {
-    border-top: 1px solid $primary;
-    padding-top: .5rem;
-    margin-bottom: 2rem;
+	border-top: 1px solid $primary;
+	padding-top: .5rem;
+	margin-bottom: 2rem;
 }

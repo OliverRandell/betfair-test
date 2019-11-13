@@ -8,11 +8,8 @@
           <h2>Title</h2>
         </header>
       </div>
-      
-      
     </article>
   </transition>
-  
 </template>
 
 <script>
@@ -25,10 +22,10 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('input', !this.value);
+      this.$emit("input", !this.value);
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

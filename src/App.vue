@@ -9,11 +9,14 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <vueper-slides fade slide-content-outside="top" slide-content-outside-class="max-widthed" :touchable="false" :slide-ratio="0.3">
-              <vueper-slide v-for="(slide, i) in slides"
-                :key="i"
-                :image="slide.image"
-              ></vueper-slide>
+            <vueper-slides
+              fade
+              slide-content-outside="top"
+              slide-content-outside-class="max-widthed"
+              :touchable="false"
+              :slide-ratio="0.3"
+            >
+              <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image"></vueper-slide>
             </vueper-slides>
             <!-- <Carousel /> -->
           </div>
@@ -37,12 +40,15 @@
             <section class="feature-img">
               <button class="btn btn-open-modal" @click="showModal = true">+</button>
               <figure>
-                <img src="https://bovilddb.files.wordpress.com/2010/03/joel_grimes.png" alt="imgAlt" />
+                <img
+                  src="https://bovilddb.files.wordpress.com/2010/03/joel_grimes.png"
+                  alt="imgAlt"
+                />
               </figure>
             </section>
           </div>
         </div>
-            
+
         <SectionBlurb>
           <template slot="title">
             <h3>{{ blurb.title }}</h3>
@@ -55,7 +61,10 @@
         <section class="feature-img">
           <button class="btn btn-open-modal" @click="showModal = true">+</button>
           <figure>
-            <img src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg" alt="imgAlt" />
+            <img
+              src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg"
+              alt="imgAlt"
+            />
           </figure>
         </section>
         <div class="row">
@@ -63,7 +72,10 @@
             <section class="feature-img">
               <button class="btn btn-open-modal" @click="showModal = true">+</button>
               <figure>
-                <img src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg" alt="imgAlt" />
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg"
+                  alt="imgAlt"
+                />
               </figure>
             </section>
           </div>
@@ -71,7 +83,10 @@
             <section class="feature-img">
               <button class="btn btn-open-modal" @click="showModal = true">+</button>
               <figure>
-                <img src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg" alt="imgAlt" />
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg"
+                  alt="imgAlt"
+                />
               </figure>
             </section>
           </div>
@@ -96,7 +111,6 @@
           </template>
         </SectionBlurb>
 
-
         <div class="row">
           <div class="col-12 col-lg-2">
             <figcaption class="img-caption">
@@ -108,7 +122,10 @@
             <section class="feature-img">
               <button class="btn btn-open-modal" @click="showModal = true">+</button>
               <figure>
-                <img src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg" alt="imgAlt" />
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg"
+                  alt="imgAlt"
+                />
               </figure>
             </section>
           </div>
@@ -127,7 +144,10 @@
                 <section class="feature-img">
                   <button class="btn btn-open-modal" @click="showModal = true">+</button>
                   <figure>
-                    <img src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg" alt="imgAlt" />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg"
+                      alt="imgAlt"
+                    />
                   </figure>
                 </section>
               </div>
@@ -135,7 +155,10 @@
                 <section class="feature-img">
                   <button class="btn btn-open-modal" @click="showModal = true">+</button>
                   <figure>
-                    <img src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg" alt="imgAlt" />
+                    <img
+                      src="https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg"
+                      alt="imgAlt"
+                    />
                   </figure>
                 </section>
               </div>
@@ -155,7 +178,7 @@
 
 <script>
 import SiteHeader from "./components/SiteHeader";
-import { VueperSlides, VueperSlide } from 'vueperslides'
+import { VueperSlides, VueperSlide } from "vueperslides";
 // import Carousel from "./components/Carousel";
 import BreakoutArea from "./components/BreakoutArea";
 import SectionBlurb from "./components/SectionBlurb";
@@ -179,19 +202,21 @@ export default {
       projectName: "Project Name",
       slides: [
         {
-          title: 'Feature Image or Slider',
-          content: 'Slide content.',
+          title: "Feature Image or Slider",
+          content: "Slide content.",
           image: "https://bovilddb.files.wordpress.com/2010/03/joel_grimes.png"
         },
         {
-          title: 'Feature Image or Slider',
-          content: 'Slide content.',
-          image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+          title: "Feature Image or Slider",
+          content: "Slide content.",
+          image:
+            "https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
         },
         {
-          title: 'Feature Image or Slider',
-          content: 'Slide content.',
-          image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
+          title: "Feature Image or Slider",
+          content: "Slide content.",
+          image:
+            "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
         }
       ],
       showModal: false,
@@ -202,11 +227,13 @@ export default {
       imgCaption: [
         {
           title: "Image Caption",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          text:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
           title: "Image Caption",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          text:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
       ]
     };

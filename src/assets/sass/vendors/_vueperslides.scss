@@ -1,0 +1,16 @@
+// @import "../../../../node_modules/vueperslides/dist/vueperslides.css";
+.vueperslides__arrow {
+    svg {
+        fill: #fff;
+    }
+}
+
+.vueperslide {
+    background-color: $grey;
+    &__content-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}

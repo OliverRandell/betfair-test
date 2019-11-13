@@ -1,8 +1,13 @@
 .section-header {
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;    
+    letter-spacing: 10px;
+    
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-top: 3rem;
+    @include media-breakpoint-up(lg) {
+        font-size: 5rem;
+    }
 }
 
 .text-center {
@@ -11,7 +16,11 @@
 
 .section-sub-heading {
     text-transform: uppercase;
+    line-height: 0.5px;
     line-height: 1;
+    font-size: $font-size-base*0.8;
+    letter-spacing: 1.5px;
+    @include spacer(.5rem);
     > span {
         font-family: $font-family-serif;
         
@@ -20,6 +29,10 @@
 
 h2, h3 {
     text-transform: uppercase;
+}
+
+h3 {
+    letter-spacing: 3px;
 }
 
 p {

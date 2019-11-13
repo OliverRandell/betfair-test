@@ -7,7 +7,7 @@
             </header>
         </div>
         <div class="row">
-            <div class="col col-sm-6 col-md-3 text-center" v-for="(item, index) in moreProjects" :key="index">
+            <div class="col-12 col-sm-6 col-md-3 text-center" v-for="(item, index) in moreProjects" :key="index">
             <div class="img-wrapper">
                 <figure><img :src="item.imgSrc" :alt="item.imgAlt"></figure>
             </div>

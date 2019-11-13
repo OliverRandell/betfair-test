@@ -1,16 +1,15 @@
 <template>
   <transition name="modal">
+    <!-- BODY HEIGHT NEEDS TO BE 100%, OVERFLOW HIDDEN -->
     <article class="modal" v-show="value">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <button class="btn btn-open-modal" @click.prevent="close">Close</button>
-            <header class="modal-title">
-              <h2>Title</h2>
-            </header>
-          </div>
-        </div>
+      <div>
+        <button class="btn btn-open-modal" @click.prevent="close">Close</button>
+        <header class="modal-title">
+          <h2>Title</h2>
+        </header>
       </div>
+      
+      
     </article>
   </transition>
   
@@ -34,6 +33,11 @@ export default {
 
 <style lang="scss" scoped>
 .modal {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.btn-open-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 </style>

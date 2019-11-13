@@ -32,3 +32,7 @@ body {
 hr {
     border-color: $grey;
 }
+
+.spacer {
+    @include spacer(2rem);
+}

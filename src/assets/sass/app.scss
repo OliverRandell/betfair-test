@@ -7,6 +7,7 @@
 
 // 3RD PARTY VENDORS LIKE BOOTSTRAP
 @import "vendors/bootstrap";
+@import "vendors/vueperslides";
 
 // GLOBAL STYLES THROUGHOUT THE SITE
 @import 'global/layout';
@@ -20,6 +21,7 @@
 @import 'components/header';
 @import 'components/modal';
 @import './components/footer';
+@import './components/carousel';
 // @import 'components/hero';
 // @import 'components/articles';
 // @import 'components/alerts';
